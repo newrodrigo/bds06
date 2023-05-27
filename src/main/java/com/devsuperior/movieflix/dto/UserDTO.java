@@ -10,7 +10,6 @@ public class UserDTO implements Serializable {
     private Long id;
     private String name;
     private String email;
-    private String password;
 
     public UserDTO() {
     }
@@ -19,7 +18,6 @@ public class UserDTO implements Serializable {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.password = password;
     }
 
     public UserDTO(User entity) {
@@ -52,15 +50,6 @@ public class UserDTO implements Serializable {
 
     public UserDTO setEmail(String email) {
         this.email = email;
-        return this;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public UserDTO setPassword(String password) {
-        this.password = password;
         return this;
     }
 }
